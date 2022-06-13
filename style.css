@@ -65,6 +65,7 @@ h3{
     width: 100%;
     /*border-radius: 50%;*/
     height: auto;
+    max-height: 333px;
    /* border:5px solid; 
     border-image:linear-gradient(45deg,
     #FC5C7D ,#600006 );*/
@@ -75,6 +76,10 @@ h3{
 }
 .media>.img{
     width: 50%;
-    height: 50%;
+    height: auto;
+    max-height: 333px;
     
 }
+/* I want to add things like hover elements, the nav bar looks like it has buttons 
+some more styling, a way to make everything still feel like a box with this background graident
+fix  middle images and big image, maybe some animation
