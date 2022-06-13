@@ -2,7 +2,22 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
 .img{
     height: auto;
     width: 100px;
+}
+.friend-box{
+    display: flex;
+    flex-flow: row wrap;
+}
+.friend-card{
+    display: flex;
+    flex-direction: column;
 }
