@@ -1,6 +1,20 @@
+
 body{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+    background: linear-gradient(0deg,
+    #6A82FB ,#FC5C7D )
+}
+header{
+    display: flex;
+    height: 72px;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 li{
     list-style-type: none;
@@ -9,15 +23,58 @@ a{
     text-decoration: none;
     color:black;
 }
+footer{
+    height: 72px;
+   
+}
+h3{
+    text-align: center;
+    border: 5px solid black;
+}
+.content{
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    
+}
+
 .img{
     height: auto;
     width: 100px;
 }
 .friend-box{
-    display: flex;
-    flex-flow: row wrap;
+   display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    
+    
+}
+.friend-box,.quote,.toys,.media{
+    flex:1 1 auto;
+    
 }
 .friend-card{
     display: flex;
     flex-direction: column;
+    width: 300px; 
+   /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5)*/
+    
+   
+}
+.friend-card>.img{
+    width: 100%;
+    /*border-radius: 50%;*/
+    height: auto;
+   /* border:5px solid; 
+    border-image:linear-gradient(45deg,
+    #FC5C7D ,#600006 );*/
+}
+.media{
+    display: flex;
+    flex: 0 1 auto;
+}
+.media>.img{
+    width: 50%;
+    height: 50%;
+    
 }
