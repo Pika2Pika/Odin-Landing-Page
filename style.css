@@ -10,14 +10,22 @@ body{
 header{
     display: flex;
     height: 72px;
+    flex:;
 }
 ul{
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+    column-gap: 12px;
 }
 li{
     list-style-type: none;
+    padding: 8px;
+    margin-right:;
+    background-color: aliceblue;
+    border-radius: 15%;
+    margin:0px 8px 0px auto;
 }
 a{
     text-decoration: none;
@@ -29,13 +37,15 @@ footer{
 }
 h3{
     text-align: center;
-    border: 5px solid black;
+    margin: 0;
+    padding: 0.5em;
 }
 .content{
     display: flex;
     flex-flow: column;
     flex: 1;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img{
@@ -44,25 +54,31 @@ h3{
 }
 .friend-box{
    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 100%;
     
 }
-.friend-box,.quote,.toys,.media{
-    flex:1 1 auto;
+.friend-card-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+.friend-box,.quote-box,.toys,.media{
+    flex:0 1 auto;
     
 }
 .friend-card{
     display: flex;
     flex-direction: column;
-    width: 300px; 
+    width: 300px;
    /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5)*/
     
    
 }
 .friend-card>.img{
-    width: 100%;
+    width:100%;
     /*border-radius: 50%;*/
     height: auto;
     max-height: 333px;
@@ -73,12 +89,54 @@ h3{
 .media{
     display: flex;
     flex: 0 1 auto;
+    max-width: 50vw;
+    justify-content: center;
+    background-color: rgba(#FFF,#FFF,#FFF,1);
 }
 .media>.img{
-    width: 50%;
+    width: 75%;
     height: auto;
-    max-height: 333px;
-    
+    max-height: 400px;
+    overflow: hidden;
+}
+.media>div{
+    width: 25%;
+}
+.title{
+    font-family: fantasy;
+}
+.quote-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 222px;
+
+}
+.toys{
+    height:111px;
+    max-height: 111px;
+   
+}
+.toys>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 50px;
+    width: 80px;
+   
+}
+.toys>div>img{
+   opacity: 0%;
+   height: 45px;
+   width: 75px;
+   z-index: 5;
+   border-radius: 20%;
+}
+.toys>div>img:hover{
+    opacity: 100%;
+    transform: scale(5);
 }
 /* I want to add things like hover elements, the nav bar looks like it has buttons 
 some more styling, a way to make everything still feel like a box with this background graident
