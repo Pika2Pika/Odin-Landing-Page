@@ -51,14 +51,16 @@ h3{
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    flex:1 1 auto;
+    flex:0 1 auto;
     margin:0;
     padding: 0;
-    height: 100%;
+    height: 90%;
+    max-height: 90%;
 }
 .bub-list>li{
     list-style-type: none;
-    display: block;
+    padding:5px;
+    
 }
 .content{
     display: flex;
